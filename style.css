@@ -155,12 +155,13 @@ user-select: none;
     height:auto;
 }
 #about_col h1{
-    font-size:35px;
+    font-size:1.5rem;
 }
 #about_col p{
     font-size:14px;
     color:#777;
     padding:15px 0 25px;
+    text-align: justify;
 }
 #about_col a{
     text-decoration:none;
