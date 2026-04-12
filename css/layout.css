@@ -1,0 +1,158 @@
+
+.app-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+
+  color: white;
+  background: linear-gradient(
+    180deg,
+    var(--primary) 0%,
+    var(--primary-dark) 100%
+  );
+
+  box-shadow: var(--shadow-md);
+}
+
+/* Logo Area */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 1.8rem 1.5rem;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-area i {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  flex: 1;
+  padding: 1.5rem 0.75rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  padding: 0.85rem 1.2rem;
+
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.nav-item i {
+  width: 1.8rem;
+  font-size: 1.2rem;
+}
+
+/* Hover & Active State */
+.nav-item:hover,
+.nav-item.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+
+.sidebar-footer {
+  padding: 1.5rem;
+
+  font-size: 0.85rem;
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+
+.main-panel {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  overflow-x: auto;
+}
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 0.8rem 1.8rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Greeting */
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-weight: 600;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Language Badge */
+.lang-badge {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+
+  background: var(--primary-light);
+  color: white;
+
+  border-radius: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .app-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-panel {
+    padding: 1rem;
+  }
+}

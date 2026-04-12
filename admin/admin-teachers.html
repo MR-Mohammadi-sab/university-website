@@ -1,0 +1,178 @@
+<!-- FILE: admin-teachers.html (STATIC VERSION) -->
+<!DOCTYPE html>
+<html lang="prs" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت اساتید</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+<div class="app-wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="logo-area">
+      <i class="fas fa-landmark"></i>
+      <span>مدیر</span>
+    </div>
+
+    <nav class="nav-menu">
+
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-tachometer-alt"></i> داشبورد
+      </a>
+
+      <a href="admin-students.html" class="nav-item">
+        <i class="fas fa-user-graduate"></i> مدیریت محصلان
+      </a>
+
+      <a href="admin-teachers.html" class="nav-item active">
+        <i class="fas fa-chalkboard-user"></i> مدیریت اساتید
+      </a>
+
+      <a href="admin-courses.html" class="nav-item">
+        <i class="fas fa-book-open"></i> مدیریت دوره‌ها
+      </a>
+
+      <a href="admin-grades.html" class="nav-item">
+        <i class="fas fa-chart-line"></i> مدیریت نمرات
+      </a>
+
+      <a href="admin-reports.html" class="nav-item">
+        <i class="fas fa-file-alt"></i> گزارشات
+      </a>
+
+      <a href="admin-staff.html" class="nav-item">
+        <i class="fas fa-users-cog"></i> مدیریت کارمندان
+      </a>
+
+      <a href="admin-ai.html" class="nav-item">
+        <i class="fas fa-robot"></i> پیشبینی AI
+      </a>
+
+    </nav>
+
+      <footer class="sidebar-footer">
+        <a href="../index.html">خروج</a>
+      </footer>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-panel">
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+      <div class="user-greeting">
+        <i class="fas fa-user-shield"></i>
+        <span>مدیر سیستم - مدیریت اساتید</span>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="page-content">
+
+      <!-- FORM -->
+      <div class="card">
+
+        <div class="card-header">
+          <i class="fas fa-chalkboard"></i>
+          ثبت استاد جدید
+        </div>
+
+        <div class="form-grid">
+
+          <div class="form-row">
+            <label>نام استاد</label>
+            <input type="text" placeholder="مثال: دکتر احمدی">
+          </div>
+
+          <div class="form-row">
+            <label>فاکولته</label>
+            <input type="text" placeholder="مثال: کمپیوتر ساینس">
+          </div>
+
+          <div class="form-row">
+            <label>تخصص</label>
+            <input type="text" placeholder="مثال: هوش مصنوعی">
+          </div>
+
+          <button class="btn-primary">
+            ثبت استاد
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- TABLE -->
+      <div class="card">
+
+        <div class="card-header">
+          <i class="fas fa-list"></i>
+          لیست اساتید
+        </div>
+
+        <div class="table">
+
+          <table class="data-table">
+
+            <thead>
+              <tr>
+                <th>نام استاد</th>
+                <th>فاکولته</th>
+                <th>تخصص</th>
+                <th>دوره‌های تخصیصی</th>
+                <th>عملیات</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>دکتر رحیمی</td>
+                <td>کمپیوتر ساینس</td>
+                <td>هوش مصنوعی</td>
+                <td>برنامه‌سازی وب، ساختمان داده</td>
+                <td>
+                  <button class="btn-icon">✏️ ویرایش</button>
+                  <button class="btn-icon">📚 تخصیص درس</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>مهندس کریمی</td>
+                <td>انجینیری</td>
+                <td>سازه</td>
+                <td>ساختمان داده، ریاضیات مهندسی</td>
+                <td>
+                  <button class="btn-icon">✏️ ویرایش</button>
+                  <button class="btn-icon">📚 تخصیص درس</button>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

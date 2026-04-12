@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="prs" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> پیشبینی AI</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+
+  <div class="app-wrapper">
+  <aside class="sidebar">
+
+    <div class="logo-area">
+      <i class="fas fa-landmark"></i>
+      <span>مدیر</span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-tachometer-alt"></i> داشبورد
+      </a>
+
+      <a href="admin-students.html" class="nav-item ">
+        <i class="fas fa-user-graduate"></i> مدیریت محصلان
+      </a>
+
+      <a href="admin-teachers.html" class="nav-item">
+        <i class="fas fa-chalkboard-user"></i> مدیریت اساتید
+      </a>
+
+      <a href="admin-courses.html" class="nav-item">
+        <i class="fas fa-book-open"></i> مدیریت دوره‌ها
+      </a>
+
+      <a href="admin-grades.html" class="nav-item">
+        <i class="fas fa-chart-line"></i> مدیریت نمرات
+      </a>
+
+      <a href="admin-reports.html" class="nav-item">
+        <i class="fas fa-file-alt"></i> گزارشات
+      </a>
+
+      <a href="admin-staff.html" class="nav-item">
+        <i class="fas fa-users-cog"></i> مدیریت کارمندان
+      </a>
+
+      <a href="admin-ai.html" class="nav-item active">
+        <i class="fas fa-robot"></i> پیشبینی AI
+      </a>
+    </nav>
+
+      <footer class="sidebar-footer">
+        <a href="../index.html">خروج</a>
+      </footer>
+
+  </aside>
+
+
+    <main class="main-panel">
+
+      <!-- TOP BAR -->
+      <header class="top-bar">
+        <div class="user-greeting">
+          <i class="fas fa-robot"></i>
+          <span>تحلیلگر هوشمند - پیشبینی AI</span>
+        </div>
+      </header>
+
+      <!-- CONTENT -->
+      <div class="page-content">
+
+        <div class="two-col-grid">
+
+          <!-- AI CONTROL PANEL -->
+          <section class="card">
+
+            <div class="card-header">
+              <i class="fas fa-brain"></i>
+              پیشبینی عملکرد تحصیلی 
+            </div>
+
+            <p>
+              مدل AI بر اساس نمرات، کریدیت، حضور و رفتار تحصیلی محصلان تحلیل انجام می‌دهد.
+            </p>
+
+            <button class="btn-primary">
+              شبیه‌سازی تحلیل AI
+            </button>
+
+            <div class="card" id="predictionResult" style="margin-top:1rem;">
+              نتیجه تحلیل اینجا نمایش داده می‌شود...
+            </div>
+
+          </section>
+
+          <!-- RISK SUMMARY -->
+          <section class="card">
+
+            <div class="card-header">
+              <i class="fas fa-chart-line"></i>
+              وضعیت محصلان
+            </div>
+
+            <div class="progress-track">
+              <span>ریسک بالا (&gt;70%)</span>
+              <span>۳ نفر</span>
+            </div>
+
+            <div class="progress-track">
+              <span>ریسک متوسط</span>
+              <span>۸ نفر</span>
+            </div>
+
+            <div class="progress-track">
+              <span>عملکرد عالی</span>
+              <span>۱۲ نفر</span>
+            </div>
+
+          </section>
+
+        </div>
+
+        <!-- FULL AI TABLE -->
+        <section class="card full-width">
+
+          <div class="card-header">
+            <i class="fas fa-microchip"></i>
+            جزئیات پیشبینی AI 
+          </div>
+
+          <div class="table">
+
+            <table class="data-table">
+
+              <thead>
+                <tr>
+                  <th>نام</th>
+                  <th>فاکولته</th>
+                  <th>میانگین</th>
+                  <th>کریدیت</th>
+                  <th>ریسک AI</th>
+                  <th>توصیه</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>علی موسوی</td>
+                  <td>کمپیوتر ساینس</td>
+                  <td>52.3</td>
+                  <td>28</td>
+                  <td class="warning-text">85٪ خطر</td>
+                  <td>مشاوره فوری</td>
+                </tr>
+
+                <tr>
+                  <td>سارا احمدی</td>
+                  <td>انجینیری</td>
+                  <td>48.7</td>
+                  <td>26</td>
+                  <td class="warning-text">92٪ خطر</td>
+                  <td>برنامه جبرانی</td>
+                </tr>
+
+                <tr>
+                  <td>زهرا کریمی</td>
+                  <td>اقتصاد</td>
+                  <td>88.4</td>
+                  <td>42</td>
+                  <td>15٪ خطر</td>
+                  <td>بورسیه پیشنهادی</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

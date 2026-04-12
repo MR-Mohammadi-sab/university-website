@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="prs" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت نمرات</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+
+<div class="app-wrapper">
+
+
+  <aside class="sidebar">
+
+    <div class="logo-area">
+      <i class="fas fa-landmark"></i>
+      <span>مدیر</span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-tachometer-alt"></i> داشبورد
+      </a>
+
+      <a href="admin-students.html" class="nav-item ">
+        <i class="fas fa-user-graduate"></i> مدیریت محصلان
+      </a>
+
+      <a href="admin-teachers.html" class="nav-item">
+        <i class="fas fa-chalkboard-user"></i> مدیریت اساتید
+      </a>
+
+      <a href="admin-courses.html" class="nav-item">
+        <i class="fas fa-book-open"></i> مدیریت دوره‌ها
+      </a>
+
+      <a href="admin-grades.html" class="nav-item active">
+        <i class="fas fa-chart-line"></i> مدیریت نمرات
+      </a>
+
+      <a href="admin-reports.html" class="nav-item">
+        <i class="fas fa-file-alt"></i> گزارشات
+      </a>
+
+      <a href="admin-staff.html" class="nav-item">
+        <i class="fas fa-users-cog"></i> مدیریت کارمندان
+      </a>
+
+      <a href="admin-ai.html" class="nav-item">
+        <i class="fas fa-robot"></i> پیشبینی AI
+      </a>
+    </nav>
+
+      <footer class="sidebar-footer">
+        <a href="../index.html">خروج</a>
+      </footer>
+
+  </aside>
+
+
+  <main class="main-panel">
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+      <div class="user-greeting">
+        <i class="fas fa-user-shield"></i>
+        <span>مدیر سیستم - مدیریت نمرات</span>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="page-content">
+
+      <div class="two-col-grid">
+
+        <!-- FORM CARD -->
+        <section class="card">
+
+          <div class="card-header">
+            <i class="fas fa-pen-fancy"></i>
+            ورود/ویرایش نمرات توسط مدیر
+          </div>
+
+          <div class="form-row">
+            <label>انتخاب محصل</label>
+            <select>
+              <option>فاطمه احمدی - CS101</option>
+              <option>رامین رحیمی - MATH202</option>
+              <option>نسیمه کریمی - ECON101</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label>دوره</label>
+            <select>
+              <option>برنامه‌سازی وب</option>
+              <option>ریاضیات مهندسی</option>
+              <option>اقتصاد کلان</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label>نمره (۰-۱۰۰)</label>
+            <input type="number" placeholder="نمره">
+          </div>
+
+          <button class="btn-primary">
+            ثبت/به‌روزرسانی نمره
+          </button>
+
+        </section>
+
+        <!-- WARNING CARD -->
+        <section class="card">
+
+          <div class="card-header">
+            <i class="fas fa-exclamation-triangle"></i>
+            سیستم تشخیص تکرار ستر
+          </div>
+
+          <p>بر اساس کریدیت ناکافی (کمتر از ۳۲ کریدیت در ترم):</p>
+
+          <div class="progress-track">
+            <span>محصلان در معرض تکرار ستر</span>
+            <span>۵ نفر</span>
+          </div>
+
+          <div class="progress-track">
+            <span>محصلان تعلیق شده</span>
+            <span>۲ نفر</span>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- TABLE -->
+      <section class="card full-width">
+
+        <div class="card-header">
+          <i class="fas fa-chart-line"></i>
+          لیست نمرات و وضعیت تحصیلی
+        </div>
+
+        <div class="table">
+          <table class="data-table">
+
+            <thead>
+              <tr>
+                <th>محصل</th>
+                <th>دوره</th>
+                <th>نمره</th>
+                <th>وضعیت کریدیت</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>علی موسوی</td>
+                <td>برنامه‌سازی پیشرفته</td>
+                <td>۴۵</td>
+                <td class="warning-text">⚠️ هشدار: کریدیت ناکافی</td>
+              </tr>
+
+              <tr>
+                <td>سارا حسینی</td>
+                <td>دیزاین رابط کاربری</td>
+                <td>۸۲</td>
+                <td>✔️ قبول</td>
+              </tr>
+
+              <tr>
+                <td>کریم رحمانی</td>
+                <td>ریاضیات مهندسی</td>
+                <td>۳۸</td>
+                <td class="warning-text">⚠️ در معرض تکرار ستر</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

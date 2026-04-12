@@ -1,0 +1,198 @@
+/* ===================== */
+/* VARIABLES (ROOT)      */
+/* ===================== */
+:root {
+  --primary: #1e3a5f;
+  --primary-dark: #0f2b44;
+  --primary-light: #2c5282;
+
+  --accent: #e6a817;
+  --accent-hover: #d49b0e;
+
+  --success: #2c7a4d;
+  --danger: #c53030;
+  --warning: #dd6b20;
+
+  --gray-bg: #f8fafc;
+  --card-bg: #ffffff;
+
+  --text-dark: #1e293b;
+  --text-muted: #475569;
+
+  --border-light: #e2e8f0;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  --radius: 1rem;
+  --transition: all 0.2s ease;
+}
+
+/* ===================== */
+/* GLOBAL RESET          */
+/* ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: var(--gray-bg);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.landing-body {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #1e3a5f 0%,
+    #0f2b44 100%
+  );
+}
+
+.landing-container {
+  max-width: 1200px;
+  margin: 2rem;
+  text-align: center;
+}
+
+.landing-header {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.landing-header i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* ===================== */
+/* ROLE CARDS            */
+/* ===================== */
+.role-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.role-card {
+  width: 280px;
+  padding: 2rem;
+
+  background: white;
+  color: var(--text-dark);
+  text-decoration: none;
+
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-md);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.role-card i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Badge */
+.role-badge {
+  display: inline-block;
+  margin-top: 1rem;
+
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+
+  background: var(--primary-light);
+  color: white;
+
+  border-radius: 2rem;
+}
+
+/* ===================== */
+/* STATUS / TEXT COLORS  */
+/* ===================== */
+.warning-text {
+  color: var(--warning);
+  font-weight: 600;
+}
+
+.status-active {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.status-suspended {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+/* ===================== */
+/* BUTTONS               */
+/* ===================== */
+.btn-icon {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn-icon:hover {
+  background: var(--border-light);
+}
+
+/* ===================== */
+/* MISC ELEMENTS         */
+/* ===================== */
+progress {
+  height: 8px;
+  border-radius: 4px;
+}
+
+
+
+.mini-footer {
+  margin-top: auto;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.mini-footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.mini-footer .socials a {
+  color: #94a3b8;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.mini-footer .socials a:hover {
+  color: white;
+  transform: scale(1.2);
+}

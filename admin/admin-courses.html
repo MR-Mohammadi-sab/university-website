@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="prs" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت دوره‌ها</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+
+  <div class="app-wrapper">
+
+  <aside class="sidebar">
+
+    <div class="logo-area">
+      <i class="fas fa-landmark"></i>
+      <span>مدیر</span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-tachometer-alt"></i> داشبورد
+      </a>
+
+      <a href="admin-students.html" class="nav-item">
+        <i class="fas fa-user-graduate"></i> مدیریت محصلان
+      </a>
+
+      <a href="admin-teachers.html" class="nav-item">
+        <i class="fas fa-chalkboard-user"></i> مدیریت اساتید
+      </a>
+
+      <a href="admin-courses.html" class="nav-item active
+      ">
+        <i class="fas fa-book-open"></i> مدیریت دوره‌ها
+      </a>
+
+      <a href="admin-grades.html" class="nav-item">
+        <i class="fas fa-chart-line"></i> مدیریت نمرات
+      </a>
+
+      <a href="admin-reports.html" class="nav-item">
+        <i class="fas fa-file-alt"></i> گزارشات
+      </a>
+
+      <a href="admin-staff.html" class="nav-item">
+        <i class="fas fa-users-cog"></i> مدیریت کارمندان
+      </a>
+
+      <a href="admin-ai.html" class="nav-item">
+        <i class="fas fa-robot"></i> پیشبینی AI
+      </a>
+    </nav>
+
+      <footer class="sidebar-footer">
+        <a href="../index.html">خروج</a>
+      </footer>
+
+  </aside>
+
+    <main class="main-panel">
+
+      <!-- TOP BAR -->
+      <header class="top-bar">
+
+        <div class="user-greeting">
+          <i class="fas fa-user-shield"></i>
+          <span>مدیر سیستم - مدیریت دوره‌ها</span>
+        </div>
+      </header>
+
+      <!-- CONTENT -->
+      <div class="page-content">
+
+        <!-- CREATE COURSE -->
+        <section class="card">
+
+          <div class="card-header">
+            <i class="fas fa-plus-circle"></i>
+            ایجاد دوره جدید
+          </div>
+
+          <div class="form-grid">
+
+            <div class="form-row">
+              <label>نام دوره</label>
+              <input type="text" placeholder="دیزاین ویب">
+            </div>
+
+            <div class="form-row">
+              <label>کریدیت</label>
+              <input type="number" value="3">
+            </div>
+
+            <div class="form-row">
+              <label>ظرفیت</label>
+              <input type="number" value="40">
+            </div>
+
+            <div class="form-row">
+              <label>استاد مربوطه</label>
+              <input type="text" placeholder="نام استاد">
+            </div>
+
+            <button class="btn-primary">
+              ذخیره دوره
+            </button>
+
+          </div>
+
+        </section>
+
+        <!-- COURSES TABLE -->
+        <section class="card">
+
+          <div class="card-header">
+            <i class="fas fa-list-ul"></i>
+            دوره‌های موجود
+          </div>
+
+          <div class="table">
+
+            <table class="data-table">
+
+              <thead>
+                <tr>
+                  <th>دوره</th>
+                  <th>کریدیت</th>
+                  <th>استاد</th>
+                  <th>ظرفیت</th>
+                  <th>محصلان</th>
+                  <th>عملیات</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>ریاضیات مهندسی</td>
+                  <td>4</td>
+                  <td>دکتر احمدی</td>
+                  <td>35</td>
+                  <td>28</td>
+                  <td>
+                    <button class="btn-icon">👥 مدیریت</button>
+                    <button class="btn-icon">✏️ ویرایش</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>برنامه‌سازی وب</td>
+                  <td>3</td>
+                  <td>مهندس کریمی</td>
+                  <td>40</td>
+                  <td>32</td>
+                  <td>
+                    <button class="btn-icon">👥 مدیریت</button>
+                    <button class="btn-icon">✏️ ویرایش</button>
+                  </td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  
+</body>
+</html>

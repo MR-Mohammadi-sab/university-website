@@ -2,13 +2,13 @@
 <html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us</title>
+  <title>ارتباط با ما</title>
   <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body >
     <header id="header_section">
             <nav id="header_nav">
                 <a  href="./index.html" id="logo-container">  
@@ -16,54 +16,58 @@
                     <span id="logo-text">البرز</span>
                 </a>
                 <ul id="header_ul">
-                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                    <!-- <i class="fa-solid fa-xmark" onclick="hidemenu()"></i> -->
                     <li><a href="index.html">خانه</a></li>
-                    <li><a href="about.html">درباره ما</a></li>
                     <li><a href="course.html">کورس ها</a></li>
-                    <li><a href="blog.html">بلاگ</a></li>
-                    <li><a href="contact.html">ارتباط</a></li>
+                    <li><a href="facilities.html" >امکانات</a></li>
                     <li><a href="admissions.html" >پذیرش</a></li>
+                    <li><a href="contact.html">ارتباط</a></li>
+                    <li><a href="blog.html">بلاگ</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+                <button class="fa-solid fa-bars" onclick="showmenu()"></button>
             </nav>
     </header>
-    <div id="bg-img"></div>
-<section class="contact">
-
-  <h1>Contact Us</h1>
-
-  <div class="contact-container">
-
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <h2>Get in Touch</h2>
-
-      <p><i class="fa-solid fa-location-dot"></i> Kabul, Afghanistan</p>
-      <p><i class="fa-solid fa-phone"></i> +93 700 000 000</p>
-      <p><i class="fa-solid fa-envelope"></i> info@university.edu</p>
-
-      <!-- Social -->
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <main>
+      <section id="hero-pages">
+         <h1>تماس با ما</h1>
+      </section>
+  <section class="contact" dir="ltr">
+  
+  
+    <div class="contact-container">
+  
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>تماس </h2>
+  
+        <p><i class="fa-solid fa-location-dot"></i>کندهار افغانستان</p>
+        <p><i class="fa-solid fa-phone"></i> +93 700 000 000</p>
+        <p><i class="fa-solid fa-envelope"></i> info@university.edu</p>
+  
+        <!-- Social -->
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="نام شما" required>
+          <input type="email" placeholder="ایمیل شما" required>
+          <input type="text" placeholder="موضوع">
+          <textarea placeholder="پیام شما" rows="5" required></textarea>
+          <button type="submit">فرستادن پیام</button>
+        </form>
+      </div>
+  
     </div>
-
-    <!-- Contact Form -->
-    <div class="contact-form">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Subject">
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-  </div>
-
-</section>
+  
+  </section>
+    </main>
 <footer class="footer" dir="ltr">
   <div class="footer-container">
 
@@ -85,11 +89,11 @@
 
     <!-- Quick Links -->
     <div class="footer-section">
-      <h3>Quick Links</h3>
+      <h3>لینک‌های سریع</h3>
       <ul>
         <li><a href="./index.html"><i class="fa-solid fa-angle-right"></i> خانه</a></li>
         <li><a href="./facilities.html"><i class="fa-solid fa-angle-right"></i> امکانات</a></li>
-        <li><a href="./contact"><i class="fa-solid fa-angle-right"></i> ارتباط</a></li>
+        <li><a href="./contact.html"><i class="fa-solid fa-angle-right"></i> ارتباط</a></li>
         <li><a href="./admissions.html"><i class="fa-solid fa-angle-right"></i> پذیرش</a></li>
       </ul>
     </div>
